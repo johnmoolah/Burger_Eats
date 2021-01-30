@@ -1,8 +1,9 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.render("index", {burger_data: ["burger", "more"]});
+    res.render("index", { burger_data: ["burger", "more"] });
+    console.log("Yaaay")
 });
 
 module.exports = router;
